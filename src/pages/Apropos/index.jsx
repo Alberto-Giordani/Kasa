@@ -1,8 +1,12 @@
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+
 function Apropos() {
 
     return (
         <div>
-            A propos
+            <Header />
+            <Footer />
         </div>
     )
 }

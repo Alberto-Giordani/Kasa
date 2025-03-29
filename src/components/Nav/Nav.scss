@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 309px;
+
+    @media screen and (max-width: 576px) {
+        width: 150px;
+    }
+
+    & a {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+
+        @media screen and (max-width: 576px) {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
