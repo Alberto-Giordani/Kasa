@@ -1,10 +1,10 @@
-function App() {
+function Home() {
 
   return (
-    <div className="App">
-      Vite App
+    <div>
+      Home
     </div>
   )
 }
 
-export default App
+export default Home
