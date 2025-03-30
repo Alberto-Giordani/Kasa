@@ -15,11 +15,13 @@
         font-family: "Montserrat", sans-serif;
         font-size: 24px;
         font-weight: 500;
+        margin-top: 45px;
 
         @media screen and (max-width: 576px) {
             font-size: 12px;
             max-width: 134px;
             text-align: center;
+            margin-top: 15px;
         }
     }
 }
