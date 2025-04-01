@@ -1,19 +1,31 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../pages/Home";
 import Apropos from "../pages/Apropos";
-import NotFound from "../pages/NotFound";
 import PropertyDetail from "../pages/PropertyDetail";
+import NotFound from "../pages/NotFound";
 
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home />,
+        errorElement: <NotFound />
+    },
+    {
+        path: "/apropos",
+        element: <Apropos />,
+        errorElement: <NotFound />
+    },
+    {
+        path: "/propertydetail",
+        element: <PropertyDetail />,
+        errorElement: <NotFound />
+    },
+    {
+        path: "*",
+        element: <NotFound />
+    }
+]);
 
 export default function RouterApp() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="*" element={<NotFound />} />
-                <Route path="/apropos" element={<Apropos />} />
-                <Route path="/propertydetail" element={<PropertyDetail />} />
-            </Routes>
-        </BrowserRouter>
-    );
+    return <RouterProvider router={router} />;
 }

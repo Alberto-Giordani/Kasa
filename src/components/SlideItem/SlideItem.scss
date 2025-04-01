@@ -1,4 +1,4 @@
-.collapse__element {
+.slide__element {
 
     max-height: 74px;
     transition: max-height 0.5s ease-in-out;
@@ -16,7 +16,7 @@
             max-height: 210px;
         }
 
-        & .collapse__element--definition {
+        & .slide__element--definition {
             opacity: 1;
             transform: translateY(0);
 
