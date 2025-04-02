@@ -1,4 +1,6 @@
-.slide {
+@use '../../styles/variables' as *;
+
+.collapse {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +10,7 @@
     margin: 0px auto 38px;
 
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: $maxwidth) {
         max-width: 335px;
     }
 

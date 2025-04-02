@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import SlideItem from '../SlideItem';
-import valeurs from '../../data/valeursAPropos.json'
-import './SlideAPropos.scss';
+import CollapseItem from '../CollapseItem';
+import './CollapseAPropos.scss';
 
 
-function SlideAPropos() {
+function CollapseAPropos({ valeurs }) {
 
     const [openItems, setOpenItems] = useState({});
 
@@ -16,9 +15,9 @@ function SlideAPropos() {
     };
 
     return (
-        <article className="slide">
+        <article className="collapse">
             {valeurs.map(item => (
-                <SlideItem
+                <CollapseItem
                     key={item.id}
                     id={item.id}
                     title={item.title}
@@ -31,4 +30,4 @@ function SlideAPropos() {
     );
 }
 
-export default SlideAPropos;
+export default CollapseAPropos;

@@ -1,17 +1,13 @@
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import Banner from '../../components/Banner'
 import BannerAPropos from '../../assets/images/Banner_2.png'
-import SlideAPropos from '../../components/SlideAPropos'
+import CollapseAPropos from '../../components/CollapseAPropos'
 
-function Apropos() {
+function Apropos({ valeurs }) {
 
     return (
         <div>
-            <Header />
             <Banner image={BannerAPropos} showText={false} brightness={0.7} />
-            <SlideAPropos />
-            <Footer />
+            <CollapseAPropos valeurs={valeurs} />
         </div>
     )
 }

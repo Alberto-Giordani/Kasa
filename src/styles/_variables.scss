@@ -1,0 +1,13 @@
+$primarycolor: #FF6060;
+$greycolor: #f6f6f6;
+$textshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+$fontkasa: "Montserrat", sans-serif;
+
+$maxwidth: 576px;
+
+@mixin display_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

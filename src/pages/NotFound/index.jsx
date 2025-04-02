@@ -1,14 +1,10 @@
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import Collapse from '../../components/Collapse'
+import Page404 from '../../components/Page404'
 
 function NotFound() {
 
     return (
         <div>
-            <Header />
-            <Collapse />
-            <Footer />
+            <Page404 />
         </div>
     )
 }

@@ -1,8 +1,10 @@
-function PropertyDetail() {
+import FicheDetail from '../../components/FicheDetail'
+
+function PropertyDetail({ annonces }) {
 
     return (
         <div>
-            Détail de la propriété
+            <FicheDetail annonces={annonces} />
         </div>
     )
 }

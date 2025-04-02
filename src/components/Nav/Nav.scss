@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -5,18 +7,18 @@
     list-style: none;
     width: 309px;
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: $maxwidth) {
         width: 150px;
     }
 
     & a {
-        font-family: "Montserrat", sans-serif;
+        font-family: $fontkasa;
         font-size: 24px;
         font-weight: 500;
         color: black;
         text-decoration: none;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: $maxwidth) {
             font-size: 12px;
             text-transform: uppercase;
         }

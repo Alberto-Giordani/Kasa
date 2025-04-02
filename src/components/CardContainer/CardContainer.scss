@@ -1,13 +1,29 @@
-.card-container {
-    display: grid;
-    margin: 56px auto 93px;
-    max-width: 1140px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+@use '../../styles/variables' as *;
 
-    @media screen and (max-width: 576px) {
+.cardContainer {
+
+    margin: 0 auto 50px;
+    max-width: 1140px;
+
+
+    @media screen and (max-width: $maxwidth) {
         max-width: 335px;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        background-color: $greycolor;
+        border-radius: 25px;
+        padding: 56px 50px 43px;
+
+        @media screen and (max-width: $maxwidth) {
+            background-color: none;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 0;
+        }
     }
 }
