@@ -76,6 +76,6 @@ Le projet est organisé de manière modulaire :
 
     - Router/ – configuration des routes pour la navigation.
 
-
+---
 
 ![Créé par Alberto Giordani](./src/assets/images/créé-par-alberto-giordani.svg)
