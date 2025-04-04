@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &--btn {
+        @include display_center;
+        color: white;
+        background-color: $primarycolor;
+        font-family: $fontkasa;
+        font-size: 14px;
+        font-weight: 700;
+        min-width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        border: none;
+
+        @media screen and (max-width: $maxwidth) {
+            font-size: 10px;
+            height: 18px;
+            min-width: 84px;
+        }
+    }
+}

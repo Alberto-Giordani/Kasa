@@ -12,23 +12,29 @@ function GalleryCarrousel({ pictures }) {
 
     return (
         <div className='carrousel__gallery'>
-            <img src={pictures[index]} alt="Image actuelle" />
-        </div>
-
-        {
-        total > 1 && (
-            <>
-                <button>
+            <div
+                className='carrousel__gallery--slider'
+                style={{ transform: `translateX(-${index * 100}%)` }}
+            >
+                {pictures.map((picture, i) => (
+                    <img
+                        key={i}
+                        src={picture}
+                        alt={`Image ${i + 1}`}
+                        className='carrousel__gallery--img'
+                    />
+                ))}
+            </div>
+            {total > 1 && (
+                <>
                     <img src={arrow} className='carrousel__gallery--left' onClick={prev} />
-                </button>
-                <button>
-
-                </button>
-                <img src={arrow} className='carrousel__gallery--right' onClick={next} />
-            </>
-        )
-
-    }
+                    <div className='carrousel__gallery--counter'>
+                        {index + 1}/{total}
+                    </div>
+                    <img src={arrow} className='carrousel__gallery--right' onClick={next} />
+                </>
+            )}
+        </div>
     )
 }
 
