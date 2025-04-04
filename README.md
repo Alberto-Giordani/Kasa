@@ -35,13 +35,11 @@ Pour cloner et installer le projet en local :
 
 2. **Installez les dépendances :**
     ```
-    Copy
     npm install
     ```
 
 3. **Démarrez le serveur de développement :**
     ```
-    Copy
     npm run dev
     ```
 
