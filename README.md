@@ -14,7 +14,7 @@ KASA est un projet web développé avec **React** et **Vite**. L'application off
 
 ## Introduction
 
-Le projet **Kasa Giordani** vise à fournir une solution conviviale pour la recherche et la visualisation d'annonces immobilières. Grâce à React, l'expérience utilisateur est fluide et réactive, tandis que Vite permet une configuration et une compilation rapides.
+Le projet **KASA** vise à fournir une solution conviviale pour la recherche et la visualisation d'annonces immobilières. Grâce à React, l'expérience utilisateur est fluide et réactive, tandis que Vite permet une configuration et une compilation rapides.
 
 ## Technologies utilisées
 
