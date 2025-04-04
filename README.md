@@ -1,6 +1,6 @@
-# Kasa Giordani
+# KASA
 
-Kasa Giordani est un projet web développé avec **React** et **Vite**. L'application offre une plateforme intuitive pour la visualisation d'annonces immobilières, avec une navigation fluide et interactive grâce à des composants modulaires et un style moderne réalisé en SCSS.
+KASA est un projet web développé avec **React** et **Vite**. L'application offre une plateforme intuitive pour la visualisation d'annonces immobilières, avec une navigation fluide et interactive grâce à des composants modulaires et un style moderne réalisé en SCSS.
 
 
 ## Table des matières
