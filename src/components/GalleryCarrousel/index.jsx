@@ -1,3 +1,14 @@
+// **********************************************
+// Composant GalleryCarrousel
+// **********************************************
+//
+// Ce composant affiche une galerie d'images sous forme de carrousel.
+// Il permet de faire défiler horizontalement les images à l'aide de flèches de navigation.
+// 
+// Props :
+// - pictures : depuis 'data/annonces.json' nous irons ensuite récupérer les images -
+// dans le dossier PropertyDetail.
+//
 import { useState } from 'react';
 import './GalleryCarrousel.scss';
 import arrow from '../../assets/images/arrow.svg'

@@ -1,3 +1,17 @@
+// **********************************************
+// Composant FicheDetail
+// **********************************************
+//
+// Ce composant affiche le détail complet d'une annonce immobilière.
+// Il récupère l'identifiant de l'annonce depuis les paramètres d'URL via useParams.
+// Si aucune annonce ne correspond à cet ID, il redirige vers la page 404 (à travers le Router).
+// 
+// Les éléments affichés incluent :
+// - Une galerie d'images (GalleryCarrousel)
+// - Le titre, la localisation et les tags associés à l'annonce
+// - Les informations de l'hôte (Host) et une évaluation sous forme d'étoiles (Stars)
+// - Des sections dépliables pour plus d'informations (CollapseProperty)
+// 
 import { useParams, Navigate } from 'react-router-dom';
 import GalleryCarrousel from '../GalleryCarrousel';
 import Host from '../Host';
