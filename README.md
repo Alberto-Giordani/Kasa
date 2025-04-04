@@ -10,8 +10,7 @@ Kasa Giordani est un projet web développé avec **React** et **Vite**. L'applic
 - [Installation](#installation)
 - [Utilisation](#utilisation)
 - [Structure du projet](#structure-du-projet)
-- [Contributions](#contributions)
-- [Licence](#licence)
+
 
 ## Introduction
 
@@ -78,4 +77,4 @@ Le projet est organisé de manière modulaire :
     - Router/ – configuration des routes pour la navigation.
 
 
-[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzMuMjY1Njg2MDM1MTU2MjUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyNzMuMjY1Njg2MDM1MTU2MjUgMzUiPjxyZWN0IHdpZHRoPSI4OS43NjU2NDAyNTg3ODkwNiIgaGVpZ2h0PSIzNSIgZmlsbD0iI2UzZTNlMyIvPjxyZWN0IHg9Ijg5Ljc2NTY0MDI1ODc4OTA2IiB3aWR0aD0iMTgzLjUwMDA0NTc3NjM2NzIiIGhlaWdodD0iMzUiIGZpbGw9IiNmZjYwNjAiLz48dGV4dCB4PSI0NC44ODI4MjAxMjkzOTQ1MyIgeT0iMjEuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidSb2JvdG8nLCBzYW5zLXNlcmlmIiBmaWxsPSIjMDAwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+Q1LDicOJIFBBUjwvdGV4dD48dGV4dCB4PSIxODEuNTE1NjYzMTQ2OTcyNjYiIHk9IjIxLjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInTW9udHNlcnJhdCcsIHNhbnMtc2VyaWYiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI5MDAiIGxldHRlci1zcGFjaW5nPSIyIj5BTEJFUlRPIEdJT1JEQU5JPC90ZXh0Pjwvc3ZnPg==)](https://forthebadge.com)
+![Créé par Alberto Giordani](./src/assets/images/créé-par-alberto-giordani.svg)
