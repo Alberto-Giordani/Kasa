@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import favicon from '../../assets/images/kasa.svg';
 import logo from '../../assets/images/logo.svg';
 import logo_petit from '../../assets/images/logo_petit.svg';
@@ -16,11 +17,13 @@ function Header() {
 
     return (
         <header className="header">
-            <picture>
-                <source media="(max-width: 576px)" srcSet={logo_petit} />
-                <source media="(min-width: 577px)" srcSet={logo} />
-                <img src={logo} alt="Logo" />
-            </picture>
+            <Link to='/' >
+                <picture>
+                    <source media="(max-width: 576px)" srcSet={logo_petit} />
+                    <source media="(min-width: 577px)" srcSet={logo} />
+                    <img src={logo} alt="Logo" />
+                </picture>
+            </Link>
             <Nav />
         </header>
     );
