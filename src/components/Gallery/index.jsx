@@ -1,5 +1,5 @@
 // **********************************************
-// Composant GalleryCarrousel
+// Composant Gallery
 // **********************************************
 //
 // Ce composant affiche une galerie d'images sous forme de carrousel.
