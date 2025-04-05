@@ -13,7 +13,7 @@
 // - Des sections dépliables pour plus d'informations (CollapseProperty)
 // 
 import { useParams, Navigate } from 'react-router-dom';
-import GalleryCarrousel from '../GalleryCarrousel';
+import Gallery from '../Gallery';
 import Host from '../Host';
 import Stars from '../Stars';
 import CollapseProperty from '../CollapseProperty';
@@ -30,7 +30,7 @@ function FicheDetail({ annonces }) {
 
     return (
         <div className='fiche'>
-            <GalleryCarrousel
+            <Gallery
                 pictures={annonce.pictures}
             />
             <section className='fiche__contenu'>

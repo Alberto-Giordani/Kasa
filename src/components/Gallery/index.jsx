@@ -10,10 +10,10 @@
 // dans le dossier PropertyDetail.
 //
 import { useState } from 'react';
-import './GalleryCarrousel.scss';
+import './Gallery.scss';
 import arrow from '../../assets/images/arrow.svg'
 
-function GalleryCarrousel({ pictures }) {
+function Gallery({ pictures }) {
 
     const [index, setIndex] = useState(0);
     const total = pictures.length;
@@ -22,9 +22,9 @@ function GalleryCarrousel({ pictures }) {
     const prev = () => setIndex((index - 1 + total) % total);
 
     return (
-        <div className='carrousel__gallery'>
+        <div className='gallery'>
             <div
-                className='carrousel__gallery--slider'
+                className='gallery--slider'
                 style={{ transform: `translateX(-${index * 100}%)` }}
             >
                 {pictures.map((picture, i) => (
@@ -32,21 +32,21 @@ function GalleryCarrousel({ pictures }) {
                         key={i}
                         src={picture}
                         alt={`Image ${i + 1}`}
-                        className='carrousel__gallery--img'
+                        className='gallery--img'
                     />
                 ))}
             </div>
             {total > 1 && (
                 <>
-                    <img src={arrow} className='carrousel__gallery--left' onClick={prev} />
-                    <div className='carrousel__gallery--counter'>
+                    <img src={arrow} className='gallery--left' onClick={prev} />
+                    <div className='gallery--counter'>
                         {index + 1}/{total}
                     </div>
-                    <img src={arrow} className='carrousel__gallery--right' onClick={next} />
+                    <img src={arrow} className='gallery--right' onClick={next} />
                 </>
             )}
         </div>
     )
 }
 
-export default GalleryCarrousel
+export default Gallery
