@@ -6,8 +6,17 @@
     height: 209px;
     @include display_center;
     flex-direction: column;
-    padding-top: 66px;
     margin: 0;
+
+    & img {
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: $maxwidth) {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+    }
 
 
     & p {
@@ -15,13 +24,12 @@
         font-family: $fontkasa;
         font-size: 24px;
         font-weight: 500;
-        margin-top: 45px;
+        margin: 0;
 
         @media screen and (max-width: $maxwidth) {
             font-size: 12px;
             max-width: 134px;
             text-align: center;
-            margin-top: 15px;
         }
     }
 }
