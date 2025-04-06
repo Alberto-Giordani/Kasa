@@ -9,9 +9,10 @@ import './PropertyDetail.scss'
 
 function PropertyDetail({ annonces }) {
 
-    const [openItems, setOpenItems] = useState({});
     const { id } = useParams();
     const annonce = annonces.find(item => item.id === id);
+
+    const [openItems, setOpenItems] = useState({});
 
     if (!annonce) {
         return <Navigate to='/404' />;
