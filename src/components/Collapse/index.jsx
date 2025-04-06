@@ -1,5 +1,5 @@
 // **********************************************
-// Composant CollapseItem
+// Composant Collapse
 // **********************************************
 //
 // Ce composant est utilisé pour afficher un élément dépliable (collapse).
@@ -14,20 +14,20 @@
 // - onToggle : fonction appelée lors du clic, qui reçoit l'id de l'élément à basculer.
 //
 import Arrow from '../Arrow';
-import './CollapseItem.scss';
+import './Collapse.scss';
 
-function CollapseItem({ id, title, content, isOpen, onToggle }) {
+function Collapse({ id, title, content, isOpen, onToggle }) {
     return (
-        <div className={`collapse__element ${isOpen ? 'open' : ''}`}>
-            <div className="collapse__element--title" onClick={() => onToggle(id)}>
+        <div className={`collapse ${isOpen ? 'open' : ''}`}>
+            <div className="collapse__title" onClick={() => onToggle(id)}>
                 <h4>{title}</h4>
                 <Arrow isOpen={isOpen} />
             </div>
-            <div className="collapse__element--definition">
+            <div className="collapse__definition">
                 {content}
             </div>
         </div>
     );
 }
 
-export default CollapseItem;
+export default Collapse;
