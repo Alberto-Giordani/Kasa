@@ -1,0 +1,76 @@
+@use '../../styles/variables' as *;
+
+.collapse {
+
+    max-height: 74px;
+    transition: max-height 0.5s ease-in-out;
+    font-family: $fontkasa;
+
+    @media screen and (max-width: $maxwidth) {
+        max-height: 30px;
+    }
+
+    &.open {
+        max-height: 194px;
+
+
+        @media screen and (max-width: $maxwidth) {
+            max-height: 210px;
+        }
+
+        & .collapse__definition {
+            opacity: 1;
+            transform: translateY(0);
+
+            @media screen and (max-width: $maxwidth) {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        height: 54px;
+        max-width: 100%;
+        background-color: $primarycolor;
+        color: white;
+        position: relative;
+        border-radius: 10px;
+        z-index: 2;
+
+        @media screen and (max-width: $maxwidth) {
+            height: 10px;
+            padding: 10px;
+        }
+
+        & h4 {
+            font-size: 24px;
+            font-weight: 700;
+
+            @media screen and (max-width: $maxwidth) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__definition {
+        padding: 16px 20px 20px;
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        opacity: 0;
+        transform: translateY(-70px);
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+
+        @media screen and (max-width: $maxwidth) {
+            font-size: 12px;
+        }
+    }
+}

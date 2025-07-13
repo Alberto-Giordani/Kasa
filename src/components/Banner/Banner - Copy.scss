@@ -1,0 +1,48 @@
+@use '../../styles/variables' as *;
+
+.banner {
+    @include display_center;
+    max-width: 1240px;
+    height: 223px;
+    margin: 0 auto 43px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: $textshadow;
+    position: relative;
+
+    @media screen and (max-width: $maxwidth) {
+        height: 111px;
+        max-width: 335px;
+        margin-bottom: 22px;
+        justify-content: flex-start;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        position: absolute;
+        font-family: $fontkasa;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: $textshadow;
+        color: #fff;
+
+        @media screen and (max-width: $maxwidth) {
+            font-size: 24px;
+            max-width: 225px;
+            text-align: left;
+            padding-left: 16px;
+        }
+
+        & h1 {
+            font-size: 1em;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+    }
+}

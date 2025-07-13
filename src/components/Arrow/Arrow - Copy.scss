@@ -1,0 +1,20 @@
+@use '../../styles/variables' as *;
+
+.arrow {
+    width: 24px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(180deg);
+
+    @media screen and (max-width: $maxwidth) {
+        width: 16px;
+    }
+
+    &.open {
+        transform: rotate(0deg);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

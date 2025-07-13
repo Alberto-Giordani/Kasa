@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fontkasa;
+
+    &__title {
+        color: $primarycolor;
+        font-size: 288px;
+        font-weight: 700;
+        margin: 90px 0;
+        line-height: 1;
+
+        @media screen and (max-width: $maxwidth) {
+            font-size: 96px;
+            margin-top: 60px;
+        }
+    }
+
+    &__text {
+        color: $primarycolor;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 139px;
+        text-align: center;
+
+        @media screen and (max-width: $maxwidth) {
+            font-size: 18px;
+            margin-bottom: 113px;
+            max-width: 260px;
+
+            & span {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__link {
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 139px;
+
+        @media screen and (max-width: $maxwidth) {
+            font-size: 14px;
+            margin-bottom: 113px;
+        }
+    }
+
+}

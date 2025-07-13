@@ -26,7 +26,7 @@ import valeurs from '../data/valeursAPropos.json'
 
 export default function RouterApp() {
     return (
-        <BrowserRouter basename="/Kasa/">
+        <BrowserRouter>
             <Header />
             <Routes>
                 <Route path='/' element={<Home annonces={annonces} />} />
